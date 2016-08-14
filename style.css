@@ -1,0 +1,36 @@
+body {
+  border: 2px solid gray;
+  width: 600px;
+  /*min-height: 250px;*/
+  margin: 20px auto;
+  padding: 0 20px;
+  font-size: 1.3em;
+}
+h1 {
+  font-size: 1.2em;
+}
+img {
+  display: block;
+  float: left;
+  /*border: 1px dotted gray;*/
+  margin: 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px  rgba(122,122,122,0.5);
+}
+p {
+  padding: 0 20px;
+}
+span {
+  font-weight: bold;
+}
+
+div {
+  border: 1px solid transparent;
+}
+
+form {
+  margin: 15px;
+  padding: 10px 0;
+  text-align: center;
+  border: 1px dotted gray;
+}
