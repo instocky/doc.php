@@ -35,7 +35,7 @@ function getArrayDoctorsv02($array, $profession, $link)
     }
 
   }
-  var_dump($temparray);
+  // var_dump($temparray);
   return $temparray;
 }
 

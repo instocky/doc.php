@@ -1,4 +1,5 @@
 <?php
+// точка входа - общая концепция
 include __DIR__ . '/config/function.php';
 include __DIR__ . '/config/data.php';
 
@@ -24,16 +25,28 @@ include __DIR__ . '/config/data.php';
     $long = 54.045;
     $lat = 37.0;
     // данные профессия
-    $profession = 'Акушер-гинеколог';
+    $profession = 'педиатр';
 
     // получен массив по возрастанию id_clinic=>расстояние
-    $t2array = getDistancev02($arrayclinicstemp, $long, $lat);
+    $t2array = getDistancev02($arrayclinics2, $long, $lat);
     // var_dump($t2array);
 
     foreach ($t2array as $key => $value) {
       $link = $key;
-      getArrayDoctorsv02($arraydoctorstemp, $profession, $link);
+      $t3array = getArrayDoctorsv02($arraydoctors, $profession, $link);
+      if ($t3array != NULL) {
+        $array[] = $t3array;
+        ++$i;
+        if ($i == 500) {
+          var_dump($array);
+          exit;
+        }
+      }
+
     }
+
+    var_dump($array);
     ?>
+
   </body>
 </html>
