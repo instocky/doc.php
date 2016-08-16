@@ -4,7 +4,7 @@
 include __DIR__ . '/config/function.php';
 include __DIR__ . '/config/data.php';
 
-// echo getArray($array);
+
 // режу элемент массива по разделителю(||) на заголовок, дескрипшн, адрес и картинку
 $search =  rand(1, 6550); // сюда нужно передать результат поиска по БД
 $temparray = getArrayDoctors($arraydoctors, $search);

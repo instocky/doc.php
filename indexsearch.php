@@ -37,9 +37,10 @@ include __DIR__ . '/config/data.php';
       if ($t3array != NULL) {
         $array[] = $t3array;
         ++$i;
-        if ($i == 500) {
+        if ($i == 10) {
           var_dump($array);
-          exit;
+          // exit;
+          return $array;
         }
       }
 
@@ -47,6 +48,11 @@ include __DIR__ . '/config/data.php';
 
     var_dump($array);
     ?>
+    <?php
+
+      echo "string";
+
+     ?>
 
   </body>
 </html>
