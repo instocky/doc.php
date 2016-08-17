@@ -10,9 +10,10 @@ $profession = 'Акушер-гинеколог';
 
 // получен массив по возрастанию id_clinic=>расстояние
 $t2array = getDistancev02($arrayclinics2, $long, $lat);
+var_dump($t2array);
 
 foreach ($t2array as $key => $value) {
   $link = $key;
-  getArrayDoctorsv02($arraydoctorstemp, $profession, $link);
+  $temparray = getArrayDoctorsv02($arraydoctorstemp, $profession, $link);
 }
-// var_dump($temparray);
+var_dump($temparray);

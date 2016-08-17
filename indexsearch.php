@@ -14,7 +14,7 @@ include __DIR__ . '/config/data.php';
     <title></title>
   </head>
   <body>
-    <form class="" action="indextemp.php" method="post">
+    <form class="" action="indexsearch.php" method="post">
       <input type="text" name="adress" value="">
       <input type="text" name="profession" value="">
       <input type="submit" name="search" value="Искать">

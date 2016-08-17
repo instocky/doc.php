@@ -1,5 +1,4 @@
 <?php
-
 $array = file(__DIR__ . '/config/db_doctors.txt');
 
 $start = microtime();
